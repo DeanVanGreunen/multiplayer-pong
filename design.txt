@@ -1,0 +1,62 @@
+Design:
+    Language: C++
+    Network: ASIO (https://www.boost.org/doc/libs/1_61_0/more/getting_started/windows.html)
+    Graphics: SFML (https://www.sfml-dev.org/tutorials/2.5/start-vc.php)
+    Audio: CAudio (https://github.com/R4stl1n/cAudio)
+    Input: GAInput (http://gainput.johanneskuhlmann.de/)
+    2D Physics: ChipmunkPhysics (https://chipmunk-physics.net/)
+    Editor: VSCode
+    Build: CMake + GCC (http://www.mingw.org/)
+    Help:
+        https://gameprogrammingpatterns.com/game-loop.html
+    Porting:
+        Android: https://developer.android.com/ndk/guides
+
+Tutorials:
+    Game Template: https://giovanni.codes/sfml-template-to-start-with-your-game/
+
+Main Menu
+    Single Player
+        Easy
+        Mid
+        Hard
+    Multiplayer
+        Host Game
+        Join Game
+    Settings
+        Audio
+        Video
+        Controls
+
+Game Menu States:
+    GAME_STATE_MAIN_MENU
+    GAME_STATE_SINGLE_PLAYER_GAME
+    GAME_STATE_SINGLE_PLAYER_GAME_EASY
+    GAME_STATE_SINGLE_PLAYER_GAME_MID
+    GAME_STATE_SINGLE_PLAYER_GAME_HARD
+    GAME_STATE_MAIN_MENU_MULTIPLAYER
+    GAME_STATE_MAIN_MENU_MULTIPLAYER_HOST_GAME
+    GAME_STATE_MAIN_MENU_MULTIPLAYER_JOIN_GAME
+    GAME_STATE_MAIN_MENU_SETTINGS
+    GAME_STATE_MAIN_MENU_SETTINGS_AUDIO
+    GAME_STATE_MAIN_MENU_SETTINGS_VIDEO
+    GAME_STATE_MAIN_MENU_SETTINGS_CONTROLS
+
+Game Play States:
+    GAME_PLAY_WAITING (Multiplayer Only, Wait for all (2) players to join game
+    GAME_PLAY_WIN
+    GAME_PLAY_LOSE
+    GAME_PLAY_SINGLE_PLAYER
+    GAME_PLAY_MULTIPLAYER
+
+Game Managers
+    Single Player (Local PLayer VS AI) + Difficult Level [No networking]
+    Multiplayer (Hosts a Lobby locally, Local player joins) and awaits for 2nd player to join. [Networking required]
+
+Networking:
+    use ngrok to open local lobby host to allow internet incoming connections.
+        ngrok tcp 1234
+
+Game Boot Sequance:
+    Splash Screen (SoftArts Studios)
+    Main Menu Screen

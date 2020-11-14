@@ -1,0 +1,4 @@
+﻿  main.cpp
+d:\storage\projects\softarts\games\pong multiplayer\src\gameengine\gameengine\main.cpp(1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  GameEngine.vcxproj -> D:\Storage\Projects\SoftArts\Games\Pong Multiplayer\src\GameEngine\Debug\GameEngine.exe
+  GameEngine.vcxproj -> D:\Storage\Projects\SoftArts\Games\Pong Multiplayer\src\GameEngine\Debug\GameEngine.pdb (Partial PDB)
